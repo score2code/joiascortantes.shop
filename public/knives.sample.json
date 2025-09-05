@@ -1,0 +1,20 @@
+[
+  {
+    "id": "knife-001",
+    "title": "Faca Chef 8\"",
+    "price": 249.9,
+    "size": "8\" (20 cm)",
+    "spine": "2.2 mm",
+    "steel": "Inox 420C",
+    "handle": "Pakkawood",
+    "weight": "210 g",
+    "condition": "Nova",
+    "description": "Equilíbrio e versatilidade para cortes precisos.",
+    "images": [
+      "/images/knife-001-1.jpg",
+      "/images/knife-001-2.jpg",
+      "/images/knife-001-3.jpg",
+      "/images/knife-001-4.jpg"
+    ]
+  }
+]

@@ -1,0 +1,740 @@
+[
+  {
+    "id": "knife-001",
+    "title": "Faca Especial 1",
+    "price": 205.5,
+    "size": "7\" (16 cm)",
+    "spine": "2.2 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "201 g",
+    "condition": "Nova",
+    "description": "Modelo número 1 ideal para cortes variados.",
+    "images": [
+      "/images/001/001.webp",
+      "/images/001/002.webp",
+      "/images/001/003.webp",
+      "/images/001/004.webp"
+    ]
+  },
+  {
+    "id": "knife-002",
+    "title": "Faca Especial 2",
+    "price": 211.0,
+    "size": "8\" (17 cm)",
+    "spine": "2.4 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "202 g",
+    "condition": "Nova",
+    "description": "Modelo número 2 ideal para cortes variados.",
+    "images": [
+      "/images/002/001.webp",
+      "/images/002/002.webp",
+      "/images/002/003.webp",
+      "/images/002/004.webp"
+    ]
+  },
+  {
+    "id": "knife-003",
+    "title": "Faca Especial 3",
+    "price": 216.5,
+    "size": "9\" (18 cm)",
+    "spine": "2.6 mm",
+    "steel": "Carbono 1095",
+    "handle": "Pakkawood",
+    "weight": "203 g",
+    "condition": "Nova",
+    "description": "Modelo número 3 ideal para cortes variados.",
+    "images": [
+      "/images/003/001.webp",
+      "/images/003/002.webp",
+      "/images/003/003.webp",
+      "/images/003/004.webp"
+    ]
+  },
+  {
+    "id": "knife-004",
+    "title": "Faca Especial 4",
+    "price": 222.0,
+    "size": "10\" (19 cm)",
+    "spine": "2.8 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "204 g",
+    "condition": "Nova",
+    "description": "Modelo número 4 ideal para cortes variados.",
+    "images": [
+      "/images/004/001.webp",
+      "/images/004/002.webp",
+      "/images/004/003.webp",
+      "/images/004/004.webp"
+    ]
+  },
+  {
+    "id": "knife-005",
+    "title": "Faca Especial 5",
+    "price": 227.5,
+    "size": "11\" (20 cm)",
+    "spine": "2.0 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "205 g",
+    "condition": "Nova",
+    "description": "Modelo número 5 ideal para cortes variados.",
+    "images": [
+      "/images/005/001.webp",
+      "/images/005/002.webp",
+      "/images/005/003.webp",
+      "/images/005/004.webp"
+    ]
+  },
+  {
+    "id": "knife-006",
+    "title": "Faca Especial 6",
+    "price": 233.0,
+    "size": "12\" (21 cm)",
+    "spine": "2.2 mm",
+    "steel": "Inox 420C",
+    "handle": "Pakkawood",
+    "weight": "206 g",
+    "condition": "Nova",
+    "description": "Modelo número 6 ideal para cortes variados.",
+    "images": [
+      "/images/006/001.webp",
+      "/images/006/002.webp",
+      "/images/006/003.webp",
+      "/images/006/004.webp"
+    ]
+  },
+  {
+    "id": "knife-007",
+    "title": "Faca Especial 7",
+    "price": 238.5,
+    "size": "13\" (22 cm)",
+    "spine": "2.4 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "207 g",
+    "condition": "Nova",
+    "description": "Modelo número 7 ideal para cortes variados.",
+    "images": [
+      "/images/007/001.webp",
+      "/images/007/002.webp",
+      "/images/007/003.webp",
+      "/images/007/004.webp"
+    ]
+  },
+  {
+    "id": "knife-008",
+    "title": "Faca Especial 8",
+    "price": 244.0,
+    "size": "14\" (23 cm)",
+    "spine": "2.6 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "208 g",
+    "condition": "Nova",
+    "description": "Modelo número 8 ideal para cortes variados.",
+    "images": [
+      "/images/008/001.webp",
+      "/images/008/002.webp",
+      "/images/008/003.webp",
+      "/images/008/004.webp"
+    ]
+  },
+  {
+    "id": "knife-009",
+    "title": "Faca Especial 9",
+    "price": 249.5,
+    "size": "15\" (24 cm)",
+    "spine": "2.8 mm",
+    "steel": "Carbono 1095",
+    "handle": "Pakkawood",
+    "weight": "209 g",
+    "condition": "Nova",
+    "description": "Modelo número 9 ideal para cortes variados.",
+    "images": [
+      "/images/009/001.webp",
+      "/images/009/002.webp",
+      "/images/009/003.webp",
+      "/images/009/004.webp"
+    ]
+  },
+  {
+    "id": "knife-010",
+    "title": "Faca Especial 10",
+    "price": 255.0,
+    "size": "6\" (25 cm)",
+    "spine": "2.0 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "210 g",
+    "condition": "Nova",
+    "description": "Modelo número 10 ideal para cortes variados.",
+    "images": [
+      "/images/010/001.webp",
+      "/images/010/002.webp",
+      "/images/010/003.webp",
+      "/images/010/004.webp"
+    ]
+  },
+  {
+    "id": "knife-011",
+    "title": "Faca Especial 11",
+    "price": 260.5,
+    "size": "7\" (26 cm)",
+    "spine": "2.2 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "211 g",
+    "condition": "Nova",
+    "description": "Modelo número 11 ideal para cortes variados.",
+    "images": [
+      "/images/011/001.webp",
+      "/images/011/002.webp",
+      "/images/011/003.webp",
+      "/images/011/004.webp"
+    ]
+  },
+  {
+    "id": "knife-012",
+    "title": "Faca Especial 12",
+    "price": 266.0,
+    "size": "8\" (27 cm)",
+    "spine": "2.4 mm",
+    "steel": "Inox 420C",
+    "handle": "Pakkawood",
+    "weight": "212 g",
+    "condition": "Nova",
+    "description": "Modelo número 12 ideal para cortes variados.",
+    "images": [
+      "/images/012/001.webp",
+      "/images/012/002.webp",
+      "/images/012/003.webp",
+      "/images/012/004.webp"
+    ]
+  },
+  {
+    "id": "knife-013",
+    "title": "Faca Especial 13",
+    "price": 271.5,
+    "size": "9\" (28 cm)",
+    "spine": "2.6 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "213 g",
+    "condition": "Nova",
+    "description": "Modelo número 13 ideal para cortes variados.",
+    "images": [
+      "/images/013/001.webp",
+      "/images/013/002.webp",
+      "/images/013/003.webp",
+      "/images/013/004.webp"
+    ]
+  },
+  {
+    "id": "knife-014",
+    "title": "Faca Especial 14",
+    "price": 277.0,
+    "size": "10\" (29 cm)",
+    "spine": "2.8 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "214 g",
+    "condition": "Nova",
+    "description": "Modelo número 14 ideal para cortes variados.",
+    "images": [
+      "/images/014/001.webp",
+      "/images/014/002.webp",
+      "/images/014/003.webp",
+      "/images/014/004.webp"
+    ]
+  },
+  {
+    "id": "knife-015",
+    "title": "Javalizeira Laranja",
+    "price": 240.0,
+    "size": "12\" (30 cm)",
+    "spine": "4 mm",
+    "steel": "Inox 420C",
+    "handle": "Resina",
+    "weight": "215 g",
+    "condition": "Nova",
+    "description": "Full tang em cristal liquido laranja com pomo esculpido javali",
+    "images": [
+      "/images/015/001.webp",
+      "/images/015/002.webp",
+      "/images/015/003.webp",
+      "/images/015/004.webp"
+    ]
+  },
+  {
+    "id": "knife-016",
+    "title": "Faca Especial 16",
+    "price": 288.0,
+    "size": "12\" (31 cm)",
+    "spine": "2.2 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "216 g",
+    "condition": "Nova",
+    "description": "Modelo número 16 ideal para cortes variados.",
+    "images": [
+      "/images/016/001.webp",
+      "/images/016/002.webp",
+      "/images/016/003.webp",
+      "/images/016/004.webp"
+    ]
+  },
+  {
+    "id": "knife-017",
+    "title": "Faca Especial 17",
+    "price": 293.5,
+    "size": "13\" (32 cm)",
+    "spine": "2.4 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "217 g",
+    "condition": "Nova",
+    "description": "Modelo número 17 ideal para cortes variados.",
+    "images": [
+      "/images/017/001.webp",
+      "/images/017/002.webp",
+      "/images/017/003.webp",
+      "/images/017/004.webp"
+    ]
+  },
+  {
+    "id": "knife-018",
+    "title": "Faca Especial 18",
+    "price": 299.0,
+    "size": "14\" (33 cm)",
+    "spine": "2.6 mm",
+    "steel": "Inox 420C",
+    "handle": "Pakkawood",
+    "weight": "218 g",
+    "condition": "Nova",
+    "description": "Modelo número 18 ideal para cortes variados.",
+    "images": [
+      "/images/018/001.webp",
+      "/images/018/002.webp",
+      "/images/018/003.webp",
+      "/images/018/004.webp"
+    ]
+  },
+  {
+    "id": "knife-019",
+    "title": "Faca Especial 19",
+    "price": 304.5,
+    "size": "15\" (34 cm)",
+    "spine": "2.8 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "219 g",
+    "condition": "Nova",
+    "description": "Modelo número 19 ideal para cortes variados.",
+    "images": [
+      "/images/019/001.webp",
+      "/images/019/002.webp",
+      "/images/019/003.webp",
+      "/images/019/004.webp"
+    ]
+  },
+  {
+    "id": "knife-020",
+    "title": "Faca Especial 20",
+    "price": 310.0,
+    "size": "6\" (15 cm)",
+    "spine": "2.0 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "220 g",
+    "condition": "Nova",
+    "description": "Modelo número 20 ideal para cortes variados.",
+    "images": [
+      "/images/020/001.webp",
+      "/images/020/002.webp",
+      "/images/020/003.webp",
+      "/images/020/004.webp"
+    ]
+  },
+  {
+    "id": "knife-021",
+    "title": "Faca Especial 21",
+    "price": 315.5,
+    "size": "7\" (16 cm)",
+    "spine": "2.2 mm",
+    "steel": "Carbono 1095",
+    "handle": "Pakkawood",
+    "weight": "221 g",
+    "condition": "Nova",
+    "description": "Modelo número 21 ideal para cortes variados.",
+    "images": [
+      "/images/021/001.webp",
+      "/images/021/002.webp",
+      "/images/021/003.webp",
+      "/images/021/004.webp"
+    ]
+  },
+  {
+    "id": "knife-022",
+    "title": "Faca Especial 22",
+    "price": 321.0,
+    "size": "8\" (17 cm)",
+    "spine": "2.4 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "222 g",
+    "condition": "Nova",
+    "description": "Modelo número 22 ideal para cortes variados.",
+    "images": [
+      "/images/022/001.webp",
+      "/images/022/002.webp",
+      "/images/022/003.webp",
+      "/images/022/004.webp"
+    ]
+  },
+  {
+    "id": "knife-023",
+    "title": "Faca Especial 23",
+    "price": 326.5,
+    "size": "9\" (18 cm)",
+    "spine": "2.6 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "223 g",
+    "condition": "Nova",
+    "description": "Modelo número 23 ideal para cortes variados.",
+    "images": [
+      "/images/023/001.webp",
+      "/images/023/002.webp",
+      "/images/023/003.webp",
+      "/images/023/004.webp"
+    ]
+  },
+  {
+    "id": "knife-024",
+    "title": "Faca Especial 24",
+    "price": 332.0,
+    "size": "10\" (19 cm)",
+    "spine": "2.8 mm",
+    "steel": "Inox 420C",
+    "handle": "Pakkawood",
+    "weight": "224 g",
+    "condition": "Nova",
+    "description": "Modelo número 24 ideal para cortes variados.",
+    "images": [
+      "/images/024/001.webp",
+      "/images/024/002.webp",
+      "/images/024/003.webp",
+      "/images/024/004.webp"
+    ]
+  },
+  {
+    "id": "knife-025",
+    "title": "Faca Especial 25",
+    "price": 337.5,
+    "size": "11\" (20 cm)",
+    "spine": "2.0 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "225 g",
+    "condition": "Nova",
+    "description": "Modelo número 25 ideal para cortes variados.",
+    "images": [
+      "/images/025/001.webp",
+      "/images/025/002.webp",
+      "/images/025/003.webp",
+      "/images/025/004.webp"
+    ]
+  },
+  {
+    "id": "knife-026",
+    "title": "Faca Especial 26",
+    "price": 343.0,
+    "size": "12\" (21 cm)",
+    "spine": "2.2 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "226 g",
+    "condition": "Nova",
+    "description": "Modelo número 26 ideal para cortes variados.",
+    "images": [
+      "/images/026/001.webp",
+      "/images/026/002.webp",
+      "/images/026/003.webp",
+      "/images/026/004.webp"
+    ]
+  },
+  {
+    "id": "knife-027",
+    "title": "Faca Especial 27",
+    "price": 348.5,
+    "size": "13\" (22 cm)",
+    "spine": "2.4 mm",
+    "steel": "Carbono 1095",
+    "handle": "Pakkawood",
+    "weight": "227 g",
+    "condition": "Nova",
+    "description": "Modelo número 27 ideal para cortes variados.",
+    "images": [
+      "/images/027/001.webp",
+      "/images/027/002.webp",
+      "/images/027/003.webp",
+      "/images/027/004.webp"
+    ]
+  },
+  {
+    "id": "knife-028",
+    "title": "Faca Especial 28",
+    "price": 354.0,
+    "size": "14\" (23 cm)",
+    "spine": "2.6 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "228 g",
+    "condition": "Nova",
+    "description": "Modelo número 28 ideal para cortes variados.",
+    "images": [
+      "/images/028/001.webp",
+      "/images/028/002.webp",
+      "/images/028/003.webp",
+      "/images/028/004.webp"
+    ]
+  },
+  {
+    "id": "knife-029",
+    "title": "Faca Especial 29",
+    "price": 359.5,
+    "size": "15\" (24 cm)",
+    "spine": "2.8 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "229 g",
+    "condition": "Nova",
+    "description": "Modelo número 29 ideal para cortes variados.",
+    "images": [
+      "/images/029/001.webp",
+      "/images/029/002.webp",
+      "/images/029/003.webp",
+      "/images/029/004.webp"
+    ]
+  },
+  {
+    "id": "knife-030",
+    "title": "Faca Especial 30",
+    "price": 365.0,
+    "size": "6\" (25 cm)",
+    "spine": "2.0 mm",
+    "steel": "Inox 420C",
+    "handle": "Pakkawood",
+    "weight": "230 g",
+    "condition": "Nova",
+    "description": "Modelo número 30 ideal para cortes variados.",
+    "images": [
+      "/images/030/001.webp",
+      "/images/030/002.webp",
+      "/images/030/003.webp",
+      "/images/030/004.webp"
+    ]
+  },
+  {
+    "id": "knife-031",
+    "title": "Faca Especial 31",
+    "price": 370.5,
+    "size": "7\" (26 cm)",
+    "spine": "2.2 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "231 g",
+    "condition": "Nova",
+    "description": "Modelo número 31 ideal para cortes variados.",
+    "images": [
+      "/images/031/001.webp",
+      "/images/031/002.webp",
+      "/images/031/003.webp",
+      "/images/031/004.webp"
+    ]
+  },
+  {
+    "id": "knife-032",
+    "title": "Faca Especial 32",
+    "price": 376.0,
+    "size": "8\" (27 cm)",
+    "spine": "2.4 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "232 g",
+    "condition": "Nova",
+    "description": "Modelo número 32 ideal para cortes variados.",
+    "images": [
+      "/images/032/001.webp",
+      "/images/032/002.webp",
+      "/images/032/003.webp",
+      "/images/032/004.webp"
+    ]
+  },
+  {
+    "id": "knife-033",
+    "title": "Faca Especial 33",
+    "price": 381.5,
+    "size": "9\" (28 cm)",
+    "spine": "2.6 mm",
+    "steel": "Carbono 1095",
+    "handle": "Pakkawood",
+    "weight": "233 g",
+    "condition": "Nova",
+    "description": "Modelo número 33 ideal para cortes variados.",
+    "images": [
+      "/images/033/001.webp",
+      "/images/033/002.webp",
+      "/images/033/003.webp",
+      "/images/033/004.webp"
+    ]
+  },
+  {
+    "id": "knife-034",
+    "title": "Faca Especial 34",
+    "price": 200.0,
+    "size": "10\" (29 cm)",
+    "spine": "2.8 mm",
+    "steel": "Inox 420C",
+    "handle": "Resina",
+    "weight": "234 g",
+    "condition": "Nova",
+    "description": "Modelo número 34 ideal para cortes variados.",
+    "images": [
+      "/images/034/001.webp",
+      "/images/034/002.webp",
+      "/images/034/003.webp",
+      "/images/034/004.webp"
+    ]
+  },
+  {
+    "id": "knife-035",
+    "title": "Faca Especial 35",
+    "price": 392.5,
+    "size": "11\" (30 cm)",
+    "spine": "2.0 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "235 g",
+    "condition": "Nova",
+    "description": "Modelo número 35 ideal para cortes variados.",
+    "images": [
+      "/images/035/001.webp",
+      "/images/035/002.webp",
+      "/images/035/003.webp",
+      "/images/035/004.webp"
+    ]
+  },
+  {
+    "id": "knife-036",
+    "title": "Faca Especial 36",
+    "price": 398.0,
+    "size": "12\" (31 cm)",
+    "spine": "2.2 mm",
+    "steel": "Inox 420C",
+    "handle": "Pakkawood",
+    "weight": "236 g",
+    "condition": "Nova",
+    "description": "Modelo número 36 ideal para cortes variados.",
+    "images": [
+      "/images/036/001.webp",
+      "/images/036/002.webp",
+      "/images/036/003.webp",
+      "/images/036/004.webp"
+    ]
+  },
+  {
+    "id": "knife-037",
+    "title": "Faca Especial 37",
+    "price": 403.5,
+    "size": "13\" (32 cm)",
+    "spine": "2.4 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "237 g",
+    "condition": "Nova",
+    "description": "Modelo número 37 ideal para cortes variados.",
+    "images": [
+      "/images/037/001.webp",
+      "/images/037/002.webp",
+      "/images/037/003.webp",
+      "/images/037/004.webp"
+    ]
+  },
+  {
+    "id": "knife-038",
+    "title": "Faca Especial 38",
+    "price": 409.0,
+    "size": "14\" (33 cm)",
+    "spine": "2.6 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "238 g",
+    "condition": "Nova",
+    "description": "Modelo número 38 ideal para cortes variados.",
+    "images": [
+      "/images/038/001.webp",
+      "/images/038/002.webp",
+      "/images/038/003.webp",
+      "/images/038/004.webp"
+    ]
+  },
+  {
+    "id": "knife-039",
+    "title": "Faca Especial 39",
+    "price": 414.5,
+    "size": "15\" (34 cm)",
+    "spine": "2.8 mm",
+    "steel": "Carbono 1095",
+    "handle": "Pakkawood",
+    "weight": "239 g",
+    "condition": "Nova",
+    "description": "Modelo número 39 ideal para cortes variados.",
+    "images": [
+      "/images/039/001.webp",
+      "/images/039/002.webp",
+      "/images/039/003.webp",
+      "/images/039/004.webp"
+    ]
+  },
+  {
+    "id": "knife-040",
+    "title": "Faca Especial 40",
+    "price": 420.0,
+    "size": "6\" (15 cm)",
+    "spine": "2.0 mm",
+    "steel": "Inox 420C",
+    "handle": "Osso",
+    "weight": "240 g",
+    "condition": "Nova",
+    "description": "Modelo número 40 ideal para cortes variados.",
+    "images": [
+      "/images/040/001.webp",
+      "/images/040/002.webp",
+      "/images/040/003.webp",
+      "/images/040/004.webp"
+    ]
+  },
+  {
+    "id": "knife-041",
+    "title": "Faca Especial 41",
+    "price": 425.5,
+    "size": "7\" (16 cm)",
+    "spine": "2.2 mm",
+    "steel": "Carbono 1095",
+    "handle": "Osso",
+    "weight": "241 g",
+    "condition": "Nova",
+    "description": "Modelo número 41 ideal para cortes variados.",
+    "images": [
+      "/images/041/001.webp",
+      "/images/041/002.webp",
+      "/images/041/003.webp",
+      "/images/041/004.webp"
+    ]
+  }
+]
