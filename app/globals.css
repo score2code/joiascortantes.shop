@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light; }
+:root { color-scheme: dark; }
+html, body { height: 100%; }
+body { @apply bg-[#0b0f14] text-[#e6eeff] antialiased; }
 
 .container { @apply max-w-7xl mx-auto px-4; }
-.card { @apply bg-white border rounded-2xl shadow-sm; }
-.btn { @apply inline-flex items-center justify-center gap-2 rounded-xl border px-3 py-2 text-sm; }
-.input { @apply h-10 w-full rounded-xl border px-3 text-sm; }
-.select { @apply h-10 w-full rounded-xl border bg-white px-3 text-sm; }
-.badge { @apply inline-flex items-center rounded-full border px-2 py-0.5 text-xs; }
+.panel { @apply bg-[#141a22] border border-white/10 rounded-2xl shadow-[0_8px_35px_rgba(0,0,0,.4)]; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-[#141a22] hover:bg-[#1a2230] px-3 py-2 text-sm transition; }
+.input { @apply h-10 w-full rounded-xl border border-white/10 bg-[#0f141b] px-3 text-sm placeholder:text-[#a3b6e680] focus:outline-none focus:ring-2 focus:ring-[#4cc2ff66]; }
+.select { @apply h-10 w-full rounded-xl border border-white/10 bg-[#0f141b] px-3 text-sm; }
+.badge { @apply inline-flex items-center rounded-full border border-white/10 bg-[#141a22] px-2 py-0.5 text-xs text-[#a3b6e6]; }
+.subtle { @apply text-[#a3b6e6]; }
+.thumb { @apply border border-white/10; }

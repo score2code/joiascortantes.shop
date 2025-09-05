@@ -1,4 +1,3 @@
-# .github/workflows/deploy.yml
 name: Build and Deploy (branch deploy)
 
 on:
@@ -28,7 +27,6 @@ jobs:
 
       - name: Build static export
         run: npm run build
-        # Next com output:'export' gera a pasta out/
 
       - name: Add .nojekyll
         run: touch out/.nojekyll
