@@ -23,11 +23,10 @@ const BRAND = {
       src={withPrefix('/brand-512.png')}
       alt="Saldão de Joias Cortantes"
       className={className}
-      width={120}
-      height={120}
+      width={140}
       loading="eager"
       decoding="async"
-      style={{ height: 'auto' }}
+      style={{ height: 'auto', display: 'block' }}
     />
   ),
 };
