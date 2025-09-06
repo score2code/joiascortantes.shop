@@ -20,10 +20,10 @@ const BRAND = {
   name: 'Saldão de Joias Cortantes',
   Logo: ({ className = 'h-10' }: { className?: string }) => (
     <img
-      src={withPrefix('/brand-512.png')}
+      src={withPrefix('/logo.png')}
       alt="Saldão de Joias Cortantes"
       className={className}
-      width={140}
+      width={200}
       loading="eager"
       decoding="async"
       style={{ height: 'auto', display: 'block' }}
