@@ -1,5 +1,5 @@
 // sw.js — PWA cache for GitHub Pages (Next.js static export)
-const VERSION = 'v1.0.0';
+const VERSION = 'v1.0.4';
 const SCOPE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, ''); // '/joiascortantes'
 const CACHE_NAME = `pwa-cache-${VERSION}`;
 
