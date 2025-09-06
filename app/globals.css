@@ -14,3 +14,16 @@ body { @apply bg-[#0b0f14] text-[#e6eeff] antialiased; }
 .badge { @apply inline-flex items-center rounded-full border border-white/10 bg-[#141a22] px-2 py-0.5 text-xs text-[#a3b6e6]; }
 .subtle { @apply text-[#a3b6e6]; }
 .thumb { @apply border border-white/10; }
+
+.card-sold .thumb img { filter: grayscale(100%) brightness(.9); }
+.card-sold::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    135deg,
+    rgba(255, 82, 82, 0.06) 0 10px,
+    transparent 10px 20px
+  );
+}

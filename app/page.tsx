@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { prefix, withPrefix } from './lib/prefix';
+import { PixBadge, PixModalLauncher } from './components/Pix';
 
 type Knife = {
   id: string;
@@ -13,7 +14,8 @@ type Knife = {
   weight?: string;
   condition?: string;
   description?: string;
-  images: string[]; // até 4
+  images: string[];
+  sold?: boolean;  
 };
 
 const BRAND = {
@@ -63,6 +65,7 @@ export default function Page() {
   const [sort, setSort] = useState<Sort>('price-asc');
   const [range, setRange] = useState<[number, number]>([0, 1000]);
   const [maxPrice, setMaxPrice] = useState(1000);
+  const [hideSold, setHideSold] = useState(false);
 
   // lightbox
   const [lightbox, setLightbox] = useState<{open:boolean; images:string[]; index:number; title?:string}>({open:false, images:[], index:0});
@@ -101,7 +104,8 @@ export default function Page() {
       const okSteel = steel ? i.steel === steel : true;
       const okHandle = handle ? i.handle === handle : true;
       const okPrice = i.price >= range[0] && i.price <= range[1];
-      return okText && okSteel && okHandle && okPrice;
+      const okSold = hideSold ? !i.sold : true;        // ⬅️ NOVO
+      return okText && okSteel && okHandle && okPrice && okSold;
     });
     switch (sort) {
       case 'price-asc': r.sort((a,b)=>a.price-b.price); break;
@@ -110,7 +114,7 @@ export default function Page() {
       case 'title-desc': r.sort((a,b)=>b.title.localeCompare(a.title)); break;
     }
     return r;
-  }, [items, query, steel, handle, sort, range]);
+  }, [items, query, steel, handle, sort, range, hideSold]);
 
   // upload de JSON (opcional)
   const onUploadJson = async (file?: File | null) => {
@@ -130,7 +134,8 @@ export default function Page() {
         weight: k.weight ?? '',
         condition: k.condition ?? '',
         description: k.description ?? '',
-        images: Array.isArray(k.images) ? k.images.slice(0,4) : []
+        images: Array.isArray(k.images) ? k.images.slice(0,4) : [],
+        sold: Boolean(k.sold ?? (k.status === 'sold'))
       }));
       setItems(normalized);
     } catch (e:any) {
@@ -164,10 +169,19 @@ export default function Page() {
               <option value="title-asc">Título: A → Z</option>
               <option value="title-desc">Título: Z → A</option>
             </select>
+            <label className="flex items-center gap-2 text-sm opacity-80">
+              <input
+                type="checkbox"
+                checked={hideSold}
+                onChange={(e)=>setHideSold(e.target.checked)}
+              />
+              Ocultar vendidos
+            </label>
             {/* <div className="relative">
               <input ref={fileRef} type="file" accept="application/json" className="hidden" onChange={(e)=>onUploadJson(e.target.files?.[0])}/>
               <button className="btn" onClick={()=>fileRef.current?.click()}>Carregar JSON</button>
             </div> */}
+            <PixModalLauncher />
           </div>
         </div>
       </header>
@@ -201,33 +215,63 @@ export default function Page() {
       {/* Grid */}
       <main className="container pb-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.map(k => (
-          <article key={k.id} className="panel overflow-hidden group">
+          <article
+            key={k.id}
+            className={`panel overflow-hidden group relative ${k.sold ? 'card-sold opacity-75' : ''}`}
+          >
             <div className="relative aspect-[4/3] bg-[#0f141b]">
+              {/* selo no canto */}
+              <div className="absolute left-3 top-3 space-x-2 z-10">
+                {k.condition ? <span className="badge">{k.condition}</span> : null}
+                {k.steel ? <span className="badge">{k.steel}</span> : null}
+                {k.sold && (
+                  <span className="inline-flex items-center px-2 py-1 rounded-full text-rose-300 bg-rose-500/15 border border-rose-400/30 text-xs font-semibold">
+                    Vendido
+                  </span>
+                )}
+              </div>
+
               <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
                 {k.images.slice(0,4).map((src, i) => (
                   <button
                     key={i}
-                    className="relative thumb"
-                    onClick={()=>setLightbox({open:true, images:k.images, index:i, title:k.title})}
+                    className={`relative thumb ${k.sold ? 'pointer-events-none cursor-not-allowed' : ''}`}
+                    onClick={()=>!k.sold && setLightbox({open:true, images:k.images, index:i, title:k.title})}
+                    aria-disabled={k.sold}
                     aria-label={`Abrir imagem ${i+1} de ${k.title}`}
                   >
-                    <img src={withPrefix(src)} alt={`${k.title} ${i+1}`} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                    <img
+                      src={withPrefix(src)}
+                      alt={`${k.title} ${i+1}`}
+                      className={`w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 ${
+                        k.sold ? 'grayscale-[85%] brightness-90' : ''
+                      }`}
+                    />
                   </button>
                 ))}
               </div>
-              <div className="absolute left-3 top-3 space-x-2">
-                {k.condition ? <span className="badge">{k.condition}</span> : null}
-                {k.steel ? <span className="badge">{k.steel}</span> : null}
-              </div>
+
+              {/* overlay discreto quando vendido */}
+              {k.sold && <div className="absolute inset-0 bg-black/25" aria-hidden="true" />}
             </div>
+
             <div className="p-4">
               <div className="flex items-start justify-between gap-3">
                 <h3 className="font-semibold leading-tight">{k.title}</h3>
                 <div className="text-right">
-                  <div className="text-xl font-bold text-[#4cc2ff]">R$ {k.price.toFixed(2)}</div>
+                  {k.sold ? (
+                    <>
+                      <div className="text-sm font-semibold text-rose-300">Vendido</div>
+                      <div className="line-through opacity-60">R$ {k.price.toFixed(2)}</div>
+                    </>
+                  ) : (
+                    <div className="text-xl font-bold text-[#4cc2ff]">R$ {k.price.toFixed(2)}</div>
+                  )}
                 </div>
               </div>
+
               <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
+                {k.id && (<><dt className="subtle">ID</dt><dd className="font-medium">{k.id}</dd></>)}
                 {k.size && (<><dt className="subtle">Tamanho</dt><dd className="font-medium">{k.size}</dd></>)}
                 {k.spine && (<><dt className="subtle">Dorso</dt><dd className="font-medium">{k.spine}</dd></>)}
                 {k.handle && (<><dt className="subtle">Cabo</dt><dd className="font-medium">{k.handle}</dd></>)}
@@ -273,7 +317,8 @@ export default function Page() {
       )}
 
       <footer className="border-t border-white/10 py-8 text-center text-sm subtle">
-        <div className="container">© {new Date().getFullYear()} {BRAND.name}. Catálogo sem carrinho.</div>
+        <div className="container w-[30vw]"><PixBadge /></div>
+        <div className="container p-10">© {new Date().getFullYear()} {BRAND.name}.</div>
       </footer>
     </div>
   );
