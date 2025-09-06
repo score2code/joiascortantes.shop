@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { prefix, withPrefix } from './lib/prefix';
-import { PixBadge, PixModalLauncher } from './components/Pix';
+import { PixModalLauncher } from './components/Pix';
 
 type Knife = {
   id: string;
@@ -169,6 +169,7 @@ export default function Page() {
               <option value="title-asc">Título: A → Z</option>
               <option value="title-desc">Título: Z → A</option>
             </select>
+            <PixModalLauncher />
             <label className="flex items-center gap-2 text-sm opacity-80">
               <input
                 type="checkbox"
@@ -181,7 +182,6 @@ export default function Page() {
               <input ref={fileRef} type="file" accept="application/json" className="hidden" onChange={(e)=>onUploadJson(e.target.files?.[0])}/>
               <button className="btn" onClick={()=>fileRef.current?.click()}>Carregar JSON</button>
             </div> */}
-            <PixModalLauncher />
           </div>
         </div>
       </header>
@@ -317,7 +317,6 @@ export default function Page() {
       )}
 
       <footer className="border-t border-white/10 py-8 text-center text-sm subtle">
-        <div className="container w-[30vw]"><PixBadge /></div>
         <div className="container p-10">© {new Date().getFullYear()} {BRAND.name}.</div>
       </footer>
     </div>
