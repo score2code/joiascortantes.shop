@@ -105,7 +105,8 @@ export default function Page() {
       const okHandle = handle ? i.handle === handle : true;
       const okPrice = i.price >= range[0] && i.price <= range[1];
       const okSold = hideSold ? !i.sold : true;        // ⬅️ NOVO
-      return okText && okSteel && okHandle && okPrice && okSold;
+      const isValid = i.price > 0 && i.spine !== '-' 
+      return okText && okSteel && okHandle && okPrice && okSold && isValid;
     });
     switch (sort) {
       case 'price-asc': r.sort((a,b)=>a.price-b.price); break;
